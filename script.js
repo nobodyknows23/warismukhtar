@@ -557,3 +557,35 @@ if ('serviceWorker' in navigator) {
         //     .catch(error => console.log('SW registration failed'));
     });
 }
+// ===== MOBILE MENU FIX =====
+
+const hamburgerBtn = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.nav-menu');
+const mobileLinks = document.querySelectorAll('.nav-link');
+
+if(hamburgerBtn){
+
+hamburgerBtn.addEventListener('click', function(){
+
+mobileMenu.classList.toggle('active');
+
+hamburgerBtn.classList.toggle('active');
+
+});
+
+}
+
+
+// Close menu after clicking link
+
+mobileLinks.forEach(link => {
+
+link.addEventListener('click', function(){
+
+mobileMenu.classList.remove('active');
+
+hamburgerBtn.classList.remove('active');
+
+});
+
+});
