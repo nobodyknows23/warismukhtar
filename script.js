@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Professions for typewriter effect
     const professions = [
-        'WARIS MUKHTAR',
+        'Med Student',
         'Web Developer', 
         'AI Expert',
         'UI/UX Enthusiast',
